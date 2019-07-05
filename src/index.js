@@ -14,12 +14,12 @@ const resolvers = {
         description: args.description
       });
     }
-  },
-  Link: {
-    id: parent => parent.id,
-    description: parent => parent.description,
-    url: parent => parent.url
   }
+  // Link: {
+  //   id: parent => parent.id,
+  //   description: parent => parent.description,
+  //   url: parent => parent.url
+  // }
 };
 
 const server = new GraphQLServer({
