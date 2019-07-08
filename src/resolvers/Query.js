@@ -1,6 +1,3 @@
-function feed(root, args, context, info) {
-  return context.prisma.links();
-}
 async function feed(parent, args, context, info) {
   const where = args.filter
     ? {
